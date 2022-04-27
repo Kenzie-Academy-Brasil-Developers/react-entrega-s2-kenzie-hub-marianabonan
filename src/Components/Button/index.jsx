@@ -1,9 +1,11 @@
 import { Container } from "./styles";
 
-const Button = ({ children, redSchema, ...rest }) => {
-  <Container redSchema={redSchema} type="button" {...rest}>
-    {children}
-  </Container>;
+const Button = ({ children, color, whidthMobile, ...rest }) => {
+  return (
+    <Container color={color} whidtMobile={whidthMobile} {...rest}>
+      {children}
+    </Container>
+  );
 };
 
 export default Button;

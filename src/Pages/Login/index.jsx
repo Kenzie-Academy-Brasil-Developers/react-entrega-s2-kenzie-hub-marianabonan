@@ -21,7 +21,7 @@ const Login = ({ authenticated, setAuthenticated, setId }) => {
     email: yup.string().email("Email inválido").required("Campo obrigatório"),
     password: yup
       .string()
-      .min(6, "mínimo 6 digitos")
+      .min(8, "mínimo 8 digitos")
       .required("Campo obrigatório"),
   });
 
@@ -94,7 +94,7 @@ const Login = ({ authenticated, setAuthenticated, setId }) => {
           Entrar
         </Buttom>
 
-        <h5>Ainda não possui uma conta?</h5>
+        <label>Ainda não possui uma conta?</label>
 
         <Buttom
           onClick={handleRegister}

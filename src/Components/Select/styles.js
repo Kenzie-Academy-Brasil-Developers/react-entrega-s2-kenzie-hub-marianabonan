@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 98%;
-  height: 60px;
+  width: 264px;
+  height: 48px;
   p,
   span {
     font-family: "Inter";
-    font-size: 9px;
+    font-size: 13px;
     margin-top: 3px;
   }
   @media (min-width: 900px) {
-    width: 98%;
+    width: 330px;
+    height: 48px;
   }
 `;
 
@@ -24,6 +25,7 @@ export const SelectOpition = styled.select`
   border: 1px solid var(--grey-0);
   color: var(--grey-5);
   margin-top: 5px;
+  margin-bottom: 32px;
   box-sizing: border-box;
   border-radius: 3px;
 `;

@@ -24,11 +24,23 @@ export default createGlobalStyle`
         
     }
     
-    body, input, button {
+    body, button, label {
         font-family: 'Inter', sans-serif;
         font-size: 1rem;
         color: var(--grey-0)
     }
+    p{
+        color: var(--grey-0) 
+    }
+    h2{
+        color: var(--grey-0)
+    }
+    
+    input{
+        width: 330px;
+        height: 48px;
+    }
+    
     body {
         background-color: var(--grey-4);
     }

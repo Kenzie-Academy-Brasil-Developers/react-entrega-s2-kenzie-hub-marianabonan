@@ -50,11 +50,11 @@ const ModalTech = ({
         }
       )
       .then((response) => {
-        toast.success("Sucesso ao cadastrar tecnologia");
+        toast.success("1 Sucesso ao cadastrar tecnologia");
         loadTechs();
       })
       .catch((_) => {
-        toast.error("Erro ao cadastrar tecnologia");
+        toast.error("1 Erro ao cadastrar tecnologia");
       });
   };
 

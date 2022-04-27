@@ -42,11 +42,11 @@ export const Card = styled.div`
   align-items: center;
   padding: 15px 8px;
   width: 296px;
-  height: 500px;
+
   background-color: var(--grey-3);
   box-shadow: 0px 3px 32px -8px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
-  height: 432px;
+
   form {
     width: 100%;
     display: flex;
@@ -54,16 +54,21 @@ export const Card = styled.div`
     align-items: center;
   }
   h2 {
-    font-weight: bold;
-    font-size: 14px;
-    color: var(--grey-0);
-  }
-  span {
     font-family: "Inter";
-    font-weight: 600;
-    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--grey-0);
+    margin-top: 22px;
+  }
+  h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 22px;
     color: var(--grey-1);
-    margin-top: 8px;
+    margin-top: 17px;
   }
 
   button {
@@ -74,6 +79,12 @@ export const Card = styled.div`
   }
   @media (min-width: 900px) {
     width: 369px;
-    height: 502px;
+    h2 {
+      margin-top: 32px;
+    }
+    h3 {
+      font-size: 12px;
+      margin-top: 22px;
+    }
   }
 `;

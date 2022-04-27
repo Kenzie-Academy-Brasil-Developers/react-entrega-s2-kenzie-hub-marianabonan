@@ -39,9 +39,10 @@ export const List = styled.li`
   h2 {
     font-family: Inter;
     font-weight: bold;
-    font-size: 14px;
     margin: 0px 12px;
     color: var(--grey-0);
+    font-weight: 700;
+    font-size: 18px;
   }
   button {
     font-family: Inter;

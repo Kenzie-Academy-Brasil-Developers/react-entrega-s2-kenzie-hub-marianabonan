@@ -17,7 +17,7 @@ const Input = ({
         </p>
       </div>
       <InputContainer isErrored={!!error}>
-        <input {...rest} {...register(name)} />
+        <input {...rest} {...register(name)} autoComplete="off" />
         {Icon && <Icon size={10} />}
       </InputContainer>
     </Container>

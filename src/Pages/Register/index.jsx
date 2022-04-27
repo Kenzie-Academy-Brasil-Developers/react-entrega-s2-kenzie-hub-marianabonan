@@ -9,6 +9,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import api from "../../Services/api";
 import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { Redirect, useHistory } from "react-router-dom";
 
 const Register = ({ authenticated }) => {
@@ -90,7 +91,7 @@ const Register = ({ authenticated }) => {
       </Content>
       <Card>
         <h2>Crie sua conta</h2>
-        <span>Rapido e grátis, vamos nessa</span>
+        <h3>Rapido e grátis, vamos nessa</h3>
 
         <form onSubmit={handleSubmit(submit)}>
           <Input

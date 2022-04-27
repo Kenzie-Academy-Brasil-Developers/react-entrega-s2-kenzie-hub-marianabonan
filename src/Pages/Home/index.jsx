@@ -44,7 +44,7 @@ const Home = ({ id, authenticated, setAuthenticated, token }) => {
         setTechs(response.data.techs);
         setUser(response.data);
       })
-      .catch((_) => toast.error("Algo deu errado!"));
+      .catch((_) => toast.error("Algo deu errado - loadUser!"));
   };
 
   const loadTechs = () => {
@@ -54,12 +54,13 @@ const Home = ({ id, authenticated, setAuthenticated, token }) => {
       .then((response) => {
         setTechs(response.data.techs);
       })
-      .catch((_) => toast.error("Algo deu errado!"));
+      .catch((_) => toast.error("Algo deu errado - loadTeachs!"));
   };
 
   useEffect(() => {
     loadUserInfor();
-  });
+    loadTechs();
+  }, []);
 
   const handleLogout = () => {
     setAuthenticated(false);
@@ -70,10 +71,9 @@ const Home = ({ id, authenticated, setAuthenticated, token }) => {
   if (authenticated === false) {
     return <Redirect to="/" />;
   }
-
+  console.log(tech);
   return (
     <>
-      {console.log(tech)}
       <ModalTech
         children="Cadastrar Tecnologia"
         open={open}

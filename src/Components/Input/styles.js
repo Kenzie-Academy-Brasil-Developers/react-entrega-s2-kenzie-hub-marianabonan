@@ -6,8 +6,8 @@ export const Container = styled.div`
 
   div {
     p {
-      font-size: 9px;
-      margin-bottom: 10px;
+      font-size: 14px;
+      margin-bottom: 13px;
       margin-top: 10px;
     }
     span {
@@ -20,8 +20,8 @@ export const Container = styled.div`
 `;
 export const InputContainer = styled.section`
   background-color: var(--grey-2);
-
-  height: 35px;
+  width: 329.93px;
+  height: 48px;
   border: 1px solid #f8f9fa;
   box-sizing: border-box;
   border-radius: 4px;
@@ -31,6 +31,7 @@ export const InputContainer = styled.section`
   justify-content: space-between;
   transition: 0.5s;
   align-items: center;
+  margin-bottom: 10px;
 
   ${(props) =>
     props.isErrored &&
@@ -41,8 +42,8 @@ export const InputContainer = styled.section`
     background: transparent;
     width: 200px;
     border: 0;
-    color: var(--grey-5);
-    font-size: 12px;
+    color: var(--grey-0);
+    font-size: 16.24px;
   }
 
   svg {
